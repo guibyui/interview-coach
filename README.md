@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Interview Coach: mock interviews for software engineers. Answer, get honest feedback, and try again until it sticks." width="100%">
+</p>
+
 # Interview Coach
 
 A [Claude skill](https://support.claude.com/en/articles/12512180-using-skills-in-claude) that turns Claude into a mock interviewer and coach for software engineering interviews.
@@ -98,6 +102,7 @@ You don't have to name the skill. Just ask for interview practice and Claude pic
 interview-coach/
 ├── SKILL.md                              # Entry point: coach persona, session flow, principles
 ├── interview-coach.skill                 # Packaged zip for uploading to Claude
+├── assets/                               # README banner, social preview, Agensi logo and preview, and their HTML source
 └── references/
     ├── practice-loop.md                  # Full loop, grading rubric, common traps, coaching moves
     ├── candidate-profile-template.md     # What to collect about your real projects

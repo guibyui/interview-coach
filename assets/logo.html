@@ -1,0 +1,49 @@
+<!--
+  Source for assets/agensi-logo.png (square skill logo; Agensi shows it at 56x56 with rounded corners).
+  Re-render with any Chromium-based browser:
+
+    chrome --headless=new --hide-scrollbars --force-device-scale-factor=2 \
+      --window-size=512,512 --screenshot=agensi-logo.png "file://$PWD/logo.html"
+-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --paper: #F7F3EA;
+    --dot: #E2D9C6;
+    --ink: #1D1F24;
+    --accent: #C2512E;
+    --good: #2F8F5B;
+  }
+  * { margin: 0; padding: 0; }
+  html, body { width: 512px; height: 512px; background: var(--paper); }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="16" cy="16" r="2" fill="#E2D9C6"/>
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="#F7F3EA"/>
+  <rect width="512" height="512" fill="url(#dots)"/>
+
+  <g transform="translate(256 256) scale(0.9) translate(-256 -277)">
+  <!-- interviewer bubble (back, tail bottom-left) -->
+  <path d="M86 112 h220 a40 40 0 0 1 40 40 v92 a40 40 0 0 1 -40 40 h-150 l-52 42 v-42 h-18 a40 40 0 0 1 -40 -40 v-92 a40 40 0 0 1 40 -40 z"
+        fill="#C2512E"/>
+  <text x="196" y="242" text-anchor="middle" font-family="Inter Display, Inter, sans-serif" font-weight="800" font-size="136" fill="#F7F3EA">?</text>
+
+  <!-- your answer bubble (front, tail bottom-right) -->
+  <path d="M206 228 h220 a40 40 0 0 1 40 40 v92 a40 40 0 0 1 -40 40 h-18 v42 l-52 -42 h-150 a40 40 0 0 1 -40 -40 v-92 a40 40 0 0 1 40 -40 z"
+        fill="#1D1F24" stroke="#F7F3EA" stroke-width="14" paint-order="stroke"/>
+  <!-- check mark -->
+  <path d="M262 316 l40 40 l78 -82" fill="none" stroke="#7FD3A0" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+</body>
+</html>
